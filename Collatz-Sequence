@@ -1,0 +1,14 @@
+i = int(input())
+while(i != 1):
+  seq = 0
+  while(i != 1):
+    if(i % 2 == 0):
+      i = i//2
+      seq += 1
+      print(i)
+    if(i == 1):
+      break
+    if(i % 2 != 0):
+      i = (3*i)+1
+      seq += 1
+      print(i)
