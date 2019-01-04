@@ -1,0 +1,12 @@
+t = 600851475143
+an = [1,]
+y = t
+x = 2
+while x !=t:
+  if(t % x == 0):
+    an.append(x)
+    t //= x
+  else:
+    x +=1
+an.append(t)
+print(max(an))
