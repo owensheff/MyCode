@@ -1,0 +1,10 @@
+f = 1
+p = 1
+total = 0
+while (f <= 4000000):
+  s = f
+  f = p + f
+  p = s
+  if(f % 2 == 0):
+    total += f
+print(total)
