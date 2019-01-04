@@ -1,0 +1,9 @@
+abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+dictionary = []
+for a in range(0,26):
+  for b in range(0,26):
+    for c in range(0,26):
+      for d in range(0,26):
+        for e in range(0,26):
+          dictionary.append(abc[a]+abc[b]+abc[c]+abc[d]+abc[e])
+print(dictionary)
