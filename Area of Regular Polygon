@@ -1,0 +1,15 @@
+import math
+print("Apothem?")
+a = int(input())
+print("Number of sides?")
+s = int(input())
+if(s==6):
+  print("Perimeter", (a*4),"sqrt3")
+  print("Area",a*(a/3)*6,"sqrt3 u^2")
+else:
+  c = (360/(s*2))
+  b=a*s*2
+  p = (math.tan(math.radians(c))*b)
+  ar = ((a/2)*p)
+  print("Perimeter",p)
+  print("Area",ar,"u^2")
