@@ -1,0 +1,13 @@
+numbers = []
+c = 1
+p = 1
+numbers.append(p)
+numbers.append(c)
+while True:
+  save = c
+  c = c + p
+  numbers.append(c)
+  p = save
+  if(len(str(c)) >= 1000):
+    print(numbers.index(c)+1)
+    break
