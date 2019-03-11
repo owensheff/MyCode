@@ -1,0 +1,18 @@
+print("What base would you like?")
+base = int(input())
+if(base > 10):
+  print("I'm the base must be less than 10")
+print("What is the number you would like to convert?")
+num = input()
+numl = [int(d) for d in str(num[::-1])]
+if(base == 1):
+  print(len(str(num)))
+conversion = 0
+for i in range(0, len(numl)):
+  if(numl[i] >= base):
+    print("Not a real number")
+    quit()
+for x in range(0, len(numl)):
+  conversion += (base ** x)*numl[x]
+print("Here is the converted number")
+print(conversion)
